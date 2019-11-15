@@ -6,6 +6,15 @@ namespace Public_Private_Key_Encryptor
 {
     class Example
     {
+
+        /* Note:
+         * 
+         * This Example Takes the User Input,
+         * Encrypts it and saves the Encrypted Message
+         * into the Assembly Folder
+         * 
+         */
+
         static void Main(string[] args)
         {
             string private_key = "<RSAKeyValue><Modulus>VsABn18QLT9ee3x5Mk8RCqNIaFFUu1watVI0HLz5kF0vi0jomGWXTLX55tDfSJTHqMTA339R+9XcOSTnXHX1NQ==</Modulus><Exponent>AQAB</Exponent><P>l86VkmzzW+BjWx5LPZ45a/MdLraZnRgSpIpJf7LHnyE=</P><Q>kkqEjdWnKUGIieJOJoEXDPgdu7NFn6elUcEmcl+Od5U=</Q><DP>czvp5iC2CsQmJ4CzdK6qv/rn6BHMQaeIX0ZpzHmVdoE=</DP><DQ>aytyHiH1+vBKYZDLZcPOKi8eQSKdD9AV+WWBj+pXCV0=</DQ><InverseQ>QyTluXg8PtDmo1BbkpPPX0a2WpRhUbHimHUMQrMfUfE=</InverseQ><D>Ozeso98fytNkKsWIcgg5KNrXdaZ3QcKY1Me9nRR/A8VdTlmTFcWerCjwZUrgPwZK/eWWyQqzFCuQpliNzMC+gQ==</D></RSAKeyValue>";
