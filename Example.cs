@@ -13,6 +13,9 @@ namespace Public_Private_Key_Encryptor
          * Encrypts it and saves the Encrypted Message
          * into the Assembly Folder
          * 
+         * It also writes the Decrypted Password
+         * in another file
+         * 
          */
 
         static void Main(string[] args)
@@ -40,6 +43,20 @@ namespace Public_Private_Key_Encryptor
             catch (Exception)
             {
             }
+
+            string Password_Decrypted = rsa.Decrypt(Password_Encrypded); //Decrypt the Password
+
+            try
+            {
+                using (StreamWriter w = File.AppendText(m_exePath + "\\Password_Decrypted.txt"))
+                {
+                    w.WriteLine(Password_Decrypted);
+                }
+            }
+            catch (Exception)
+            {
+            }
+
 
 
         }
