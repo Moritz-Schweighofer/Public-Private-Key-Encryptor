@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -7,7 +6,6 @@ namespace Public_Private_Key_Encryptor
 {
     internal class RSAController
     {
-
         private static UnicodeEncoding _encoder = new UnicodeEncoding();
 
         public RSAController()
@@ -37,7 +35,6 @@ namespace Public_Private_Key_Encryptor
 
         public string Decrypt(string data, string _private_key)
         {
-
             try
             {
                 var rsa = new RSACryptoServiceProvider();
