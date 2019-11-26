@@ -25,15 +25,13 @@ namespace Public_Private_Key_Encryptor
 
             string public_key = "<RSAKeyValue><Modulus>VsABn18QLT9ee3x5Mk8RCqNIaFFUu1watVI0HLz5kF0vi0jomGWXTLX55tDfSJTHqMTA339R+9XcOSTnXHX1NQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
 
-            RSAController rsa = new RSAController(); // Generate the RSA Controller
-
             Console.WriteLine("Enter The Password: ");
 
             string Password = Console.ReadLine();
 
-            string Password_Encrypded = rsa.Encrypt(Password, public_key); //Encrypt the Password
+            string Password_Encrypded = RSAController.Encrypt(Password, public_key); //Encrypt the Password
 
-            string Password_Decrypted = rsa.Decrypt(Password_Encrypded, private_key); //Decrypt the Password
+            string Password_Decrypted = RSAController.Decrypt(Password_Encrypded, private_key); //Decrypt the Password
 
 
             string m_exePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);

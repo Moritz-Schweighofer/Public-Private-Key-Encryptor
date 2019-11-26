@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Public_Private_Key_Encryptor
 {
-    internal class RSAController
+    public class RSAController
     {
         private static UnicodeEncoding _encoder = new UnicodeEncoding();
 
@@ -13,7 +13,7 @@ namespace Public_Private_Key_Encryptor
             //Pass
         }
 
-        public string Encrypt(string data, string _public_key)
+        public static string Encrypt(string data, string _public_key)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace Public_Private_Key_Encryptor
             }
         }
 
-        public string Decrypt(string data, string _private_key)
+        public static string Decrypt(string data, string _private_key)
         {
             try
             {
